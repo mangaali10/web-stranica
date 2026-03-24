@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2FA Verifikacija - Mangos</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #ff80ab, #80d8ff);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .auth-container {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 40px;
+      border-radius: 10px;
+      color: white;
+      width: 400px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+      text-align: center;
+      backdrop-filter: blur(10px);
+    }
+
+    .auth-container img.logo {
+      width: 80px;
+      margin-bottom: 20px;
+    }
+
+    .auth-container h2 {
+      margin-bottom: 20px;
+      font-size: 26px;
+      color: #ffccff;
+    }
+
+    .auth-container p {
+      font-size: 16px;
+      margin-bottom: 20px;
+      color: #eee;
+    }
+
+    .auth-container input[type="text"] {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border: none;
+      border-radius: 5px;
+      background-color: #fce4ec;
+      color: #333;
+      font-size: 16px;
+      text-align: center;
+      letter-spacing: 4px;
+    }
+
+    .auth-container button {
+      width: 100%;
+      padding: 12px;
+      background-color: #80d8ff;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      color: #000;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .auth-container button:hover {
+      background-color: #4fc3f7;
+    }
+
+    .footer {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #ccc;
+    }
+
+    .footer a {
+      color: #ffccff;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="auth-container">
+    <!-- Logo Mangos -->
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Mango_fruit_icon.svg/512px-Mango_fruit_icon.svg.png" alt="Mangos Logo" class="logo">
+
+    <h2>2FA Verifikacija</h2>
+    <p>Unesite 6-cifreni kod koji smo vam poslali putem emaila ili SMS-a.</p>
+    <form>
+      <input type="text" placeholder="● ● ● ● ● ●" maxlength="6" required>
+      <button type="submit">Potvrdi kod</button>
+    </form>
+    <div class="footer">
+      Niste dobili kod? <a href="#">Pošalji ponovo</a><br>
+      © 2025 Mangos
+    </div>
+  </div>
+</body>
+</html>

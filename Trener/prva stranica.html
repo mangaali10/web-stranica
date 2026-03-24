@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Taktički Fokus | Mangos</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      height: 100vh;
+      background: linear-gradient(135deg, #f4a4d4, #9ac8ff);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #333;
+    }
+
+    .dashboard {
+      background: rgba(255, 255, 255, 0.4);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+      max-width: 600px;
+      width: 90%;
+      padding: 40px 30px;
+      text-align: center;
+    }
+
+    .dashboard h1 {
+      color: #3b005c;
+      font-size: 28px;
+      margin-bottom: 10px;
+      font-weight: 700;
+    }
+
+    .dashboard p {
+      color: #444;
+      margin-bottom: 25px;
+    }
+
+    .options {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .option {
+      background: rgba(255, 255, 255, 0.8);
+      border: none;
+      border-radius: 12px;
+      padding: 15px 20px;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      text-align: left;
+      cursor: pointer;
+      transition: all 0.25s ease-in-out;
+    }
+
+    .option i {
+      font-size: 24px;
+      color: #c2185b;
+      transition: color 0.2s;
+    }
+
+    .option:hover {
+      background: #c2185b;
+      color: #fff;
+      transform: translateY(-4px);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+    }
+
+    .option:hover i {
+      color: #fff;
+    }
+
+    .option-title {
+      font-weight: 600;
+      font-size: 16px;
+    }
+
+    .option-desc {
+      font-size: 13px;
+      color: #555;
+    }
+
+    .option:hover .option-desc {
+      color: #fff;
+    }
+
+    footer {
+      margin-top: 25px;
+      font-size: 13px;
+      color: #444;
+      opacity: 0.8;
+    }
+
+    @media (max-width: 480px) {
+      .dashboard {
+        padding: 30px 20px;
+      }
+      .option {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="dashboard">
+    <h1>Dobrodošli, Treneru!</h1>
+    <p>Odaberite svoj taktički fokus:</p>
+
+    <div class="options">
+      <div class="option">
+        <i class="fas fa-th-large"></i>
+        <div>
+          <div class="option-title">Kreator Formacija</div>
+          <div class="option-desc">Odaberite formaciju i postavite igrače na teren.</div>
+        </div>
+      </div>
+
+      <div class="option">
+        <i class="fas fa-brain"></i>
+        <div>
+          <div class="option-title">Analiza Protivnika</div>
+          <div class="option-desc">Dobijte AI analizu taktičkih prednosti i slabosti rivala.</div>
+        </div>
+      </div>
+
+      <div class="option">
+        <i class="fas fa-futbol"></i>
+        <div>
+          <div class="option-title">Stil Igre</div>
+          <div class="option-desc">Birajte između visokog presinga, posjeda lopte ili kontre.</div>
+        </div>
+      </div>
+
+      <div class="option">
+        <i class="fas fa-dumbbell"></i>
+        <div>
+          <div class="option-title">Trening Fokus</div>
+          <div class="option-desc">Preporuke za trening na osnovu podataka s utakmica.</div>
+        </div>
+      </div>
+
+      <div class="option">
+        <i class="fas fa-book-open"></i>
+        <div>
+          <div class="option-title">Taktička Biblioteka</div>
+          <div class="option-desc">Pristupite video analizama i dijagramima strategija.</div>
+        </div>
+      </div>
+    </div>
+
+    <footer>© 2025 Mangos | Taktički Asistent</footer>
+  </div>
+</body>
+</html>
